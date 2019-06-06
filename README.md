@@ -1,8 +1,15 @@
 # stateless-shiro
 spring boot + shiro (stateless)
-public static void main (String[] args) throws Exception {
-        Map<String, String> map = RsaUtil.generateKeyPair();
 
+----------------------------
+
+gen private/public key
+
+----------------------------
+
+     public static void main (String[] args) throws Exception {
+        Map<String, String> map = RsaUtil.generateKeyPair();
+        
         String publicKeyStr = map.get("publicKey");
         String privateKeyStr = map.get("privateKey");
 
